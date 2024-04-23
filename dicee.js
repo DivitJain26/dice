@@ -1,17 +1,11 @@
-// calling function
+var randomVal1 = Math.round( ( Math.random()*5 ) + 1 );
+var randomVal2 = Math.round( ( Math.random()*5 ) + 1 );
 
-randomOutput(".img1");
-randomOutput(".img2");
+var randomImg1 = "images/" + "dice" + randomVal1 + ".png";
+var randomImg2 = "images/" + "dice" + randomVal2 + ".png";
 
-// generating function
-
-function randomOutput(img) {
-
-    var randomVal = Math.round( ( Math.random()*5 ) + 1 );
-    var randomImg = "images/" + "dice" + randomVal + ".png";
-    document.querySelector(img).setAttribute("src", randomImg);
-    return randomVal;
-}
+document.querySelector(".img1").setAttribute("src", randomImg1);
+document.querySelector(".img2").setAttribute("src", randomImg2);
 
 // chainging main heading
 
